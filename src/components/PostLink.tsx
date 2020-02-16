@@ -2,20 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 
 interface PostLinkProps {
-  title: string;
+  id: string;
 }
 
-const PostLink: React.FC<PostLinkProps> = ({ title }) => (
+const PostLink: React.FC<PostLinkProps> = ({ id }) => (
   <li>
-    <Link
-      href={{
-        pathname: 'post',
-        query: {
-          title,
-        },
-      }}
-    >
-      <a>{title}</a>
+    <Link href="/post/[id]" as={`/post/${id}`}>
+      <a>{id}</a>
     </Link>
   </li>
 );
