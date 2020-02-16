@@ -38,7 +38,8 @@
     "no-underscore-dangle": "off",
     "lines-between-class-members": "off",
     "import/extensions": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   },
 
   "settings": {
