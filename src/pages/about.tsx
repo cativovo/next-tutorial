@@ -1,13 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
+import Layout from '../components/Layout';
 
-const About = () => (
-  <div>
-    <Link href="/index">
-      <a>About Page</a>
-    </Link>
+const About: React.FC = () => (
+  <Layout>
     <p>This is about page</p>
-  </div>
+  </Layout>
 );
 
 export default About;

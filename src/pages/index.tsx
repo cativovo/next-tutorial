@@ -1,13 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
+import Layout from '../components/Layout';
 
-const Index = () => (
-  <div>
-    <Link href="/about">
-      <a title="About Page">About Page</a>
-    </Link>
+const Index: React.FC = () => (
+  <Layout>
     <p>Hello Next js</p>
-  </div>
+  </Layout>
 );
 
 export default Index;
