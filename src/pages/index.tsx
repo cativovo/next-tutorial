@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Home = () => <h1>Home !</h1>;
+const Index = () => <h1>Hello Nextjs !</h1>;
 
-export default Home;
+export default Index;
