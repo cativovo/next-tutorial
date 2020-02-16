@@ -3,12 +3,13 @@ import Link from 'next/link';
 
 interface PostLinkProps {
   id: string;
+  name: string;
 }
 
-const PostLink: React.FC<PostLinkProps> = ({ id }) => (
+const PostLink: React.FC<PostLinkProps> = ({ id, name }) => (
   <li>
-    <Link href="/post/[id]" as={`/post/${id}`}>
-      <a>{id}</a>
+    <Link href="/show/[id]" as={`/show/${id}`}>
+      <a>{name}</a>
     </Link>
   </li>
 );
